@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: fastapi-app
-      image: mbaoma/fast-api
+      image: mbaoma/fast-api:latest
       ports:
         - containerPort: 8000
