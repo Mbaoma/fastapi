@@ -11,4 +11,4 @@ spec:
     - protocol: TCP
       port: 8000
       targetPort: 8000
-      nodePort: 31000  # Optional: If you don't specify this, Kubernetes will choose a port for you.
+      # nodePort: 31000  # Optional: If you don't specify this, Kubernetes will choose a port for you.
