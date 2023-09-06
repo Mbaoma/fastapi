@@ -1,4 +1,4 @@
-name: Push to GHCR
+name: Deploy to GitHub container registry
  
 on:
   pull_request:
