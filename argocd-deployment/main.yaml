@@ -14,7 +14,7 @@ spec:
         app: api-v1
     spec:
       containers:
-      - image: docker.io/mbaoma/fast-api:v2
+      - image: ghcr.io/mbaoma/fastapi:sha-7582c0a
         name: api-v1
         ports:
         - containerPort: 8000
