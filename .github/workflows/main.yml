@@ -49,7 +49,17 @@ jobs:
           docker build -t ${{ secrets.DOCKER_USERNAME }}/fast-api:v2 .
           docker push ${{ secrets.DOCKER_USERNAME }}/fast-api:v2
           
-      - name: GHCR-Action
-        uses: KuhlTime/ghcr-action@v1
+      - name: 'Login to GitHub Container Registry'
+        uses: docker/login-action@v1
         with:
-          token: ${{ secrets.GHCR_TOKEN }}
+          registry: ghcr.io
+          username: ${{github.actor}}
+          password: ${{secrets.GHCR_TOKEN}}
+
+      - name: Build and Publish latest service image
+        uses: pmorelli92/github-container-registry-build-push@2.0.0
+        with:
+            github-push-secret: ${{secrets.GITHUB_TOKEN}}
+            docker-image-name: fastapi
+            docker-image-tag: latest 
+         
