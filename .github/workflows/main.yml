@@ -42,5 +42,5 @@ jobs:
             
       -   name: Build and push Docker image
           run: |
-            docker build -t ${{ secrets.DOCKER_USERNAME }}/fast-api:v1 .
-            docker push ${{ secrets.DOCKER_USERNAME }}/fast-api:v1
+            docker build -t ${{ secrets.DOCKER_USERNAME }}/fast-api:v2 .
+            docker push ${{ secrets.DOCKER_USERNAME }}/fast-api:v2
