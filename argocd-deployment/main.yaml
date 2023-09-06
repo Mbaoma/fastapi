@@ -14,7 +14,7 @@ spec:
         app: api-v1
     spec:
       containers:
-      - image: ghcr.io/mbaoma/fastapi:sha-7582c0a
+      - image: ghcr.io/mbaoma/fastapi:latest
         name: api-v1
         ports:
         - containerPort: 8000
