@@ -56,7 +56,10 @@ jobs:
           username: ${{github.actor}}
           password: ${{secrets.GHCR_TOKEN}}
 
-      - name: 'Build and push Image'
-        run: |
-              docker build . --tag ghcr.io/Mbaoma/fastApi:latest
-              docker push ghcr.io/Mbaoma/fastApi:latest
+      - uses: pmorelli92/github-container-registry-build-push@2.0.0
+        name: Build and Publish latest service image
+        with:
+            github-push-secret: ${{secrets.GITHUB_TOKEN}}
+            docker-image-name: fastapi
+            docker-image-tag: latest 
+         
