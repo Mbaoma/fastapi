@@ -33,4 +33,4 @@ $ kubectl apply -f k8s-config-initial
 
 ## ArgoCD Deployment 
 - [Install](https://argo-cd.readthedocs.io/en/stable/getting_started/) ArgoCD
-Reference [this](https://github.com/Mbaoma/argocd-local-deployments) repo, to view the deployment.
+- Reference [this](https://github.com/Mbaoma/argocd-local-deployments) repo, to view the deployment.
