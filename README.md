@@ -7,7 +7,6 @@ FastAPI is the framework you’ll use to build your API, and Uvicorn is the serv
 ```python
 $ uvicorn main:app --reload
 ``` 
-
 The ```-reload``` command means that when you update your application code, the server will reload automatically.
 
 ## Running the app (Docker)
