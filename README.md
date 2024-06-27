@@ -27,6 +27,8 @@ $ kubectl apply -f ingress.yaml
 ```
 $ kubectl apply -f k8s-config-initial
 ```
+
+changes....
 <img width="741" alt="image" src="https://github.com/Mbaoma/fastAPI/assets/49791498/a179ab37-de18-435b-96cd-24cf3c5f6f95">
 
 ## ArgoCD Deployment 
